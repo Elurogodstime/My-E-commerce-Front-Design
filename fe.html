@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Simple Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+</head>
+<body>
+
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#hero {
+  background: #444;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.services-list li {
+  background: #ddd;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.portfolio-items {
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio-items .item {
+  background: #ccc;
+  padding: 60px;
+  flex: 1;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+    </style>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">EluroDev</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Welcome to My Website</h2>
+      <p>Creative Developer | Designer | Freelancer</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m Eluro, a passionate developer who builds clean and modern websites. I enjoy learning and solving real-world problems through code.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>My Services</h2>
+      <ul class="services-list">
+        <li>Web Design</li>
+        <li>Frontend Development</li>
+        <li>WordPress Sites</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-items">
+        <div class="item">Project 1</div>
+        <div class="item">Project 2</div>
+        <div class="item">Project 3</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Eluro Godstime. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
